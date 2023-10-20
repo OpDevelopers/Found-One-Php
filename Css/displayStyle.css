@@ -1,0 +1,196 @@
+*,
+html,
+body::after::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --box-shodow: 0 0rem 1rem rgba(0, 0, 0, 0.1);
+  --font1: #e66c1c;
+  --font2: #ed560b;
+  --font3: rgb(220, 20, 60);
+}
+
+.description .des-right .des-upper .videoLink {
+  width: 49rem;
+}
+
+.description .des-right .des-upper .videoLink .yVideoFrame {
+  width: 49rem;
+}
+
+.for-sale {
+  height: 2rem;
+  width: 2.8rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--font3);
+  text-align: center;
+}
+
+.album .container form .row button {
+  width: 18rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.album .container form .row .wishlist {
+  width: 17rem;
+  color: rgb(47, 56, 65);
+  background-color: lightblue;
+}
+
+.album .container form .row button.wish {
+  color: var(--font1);
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.album .container form .row .buttons {
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.album .container form .row .wishlist p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.album .container form .row .wishlist:hover {
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.album .container form .row .col button .card {
+  height: 20rem;
+  width: 16.5rem;
+  margin: 0.5rem;
+  border: 6px solid white;
+  border-radius: 10px;
+  box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.album .container form .row .col button .card:hover {
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.album .container form .row .col button .card img {
+  height: 11rem;
+  width: 15.5rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.officeLocation {
+  height: 35rem;
+  width: 100%;
+  padding: 0.5rem 8rem;
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2rem;
+  z-index: 5;
+}
+
+.officeLocation::before {
+  content: " ";
+  height: 35rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1697441642505-0f4ce8fbe98a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+  z-index: -5;
+}
+
+.office-upper {
+  width: 50%;
+  text-align: center;
+}
+
+.office-upper h1 {
+  color: white;
+  font-weight: 800;
+}
+
+.form {
+  width: 45%;
+}
+
+.form form .form-bottom {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form form .form-bottom button.btn {
+  margin: 8px;
+  font-size: 1rem;
+}
+
+.filter-search .container .off-location {
+  width: 20.5rem;
+  position: relative;
+  left: -1.6rem;
+}
+
+.filter-search .container .off-location iframe {
+  height: 20rem;
+  width: 20.5rem;
+  position: relative;
+  top: 2rem;
+}
+
+@media (min-width: 1990px) and (max-width: 2880px) {
+  .description .des-right .des-upper .videoLink {
+    width: 60rem;
+  }
+  .description .des-right .des-upper .videoLink .yVideoFrame {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 500px) {
+  .description .des-right .des-upper {
+    width: 23rem;
+  }
+  .description .des-features iframe {
+    width: 23rem;
+  }
+  .description .des-right .des-upper .videoLink {
+    width: 23rem;
+  }
+  .description .des-right .des-upper .videoLink .yVideoFrame {
+    width: 23rem;
+  }
+  .filter-search {
+    display: none;
+  }
+
+  .officeLocation {
+    padding: 0;
+  }
+  .form {
+    width: 95%;
+  }
+  .form form .form-bottom {
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
